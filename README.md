@@ -10,8 +10,8 @@ A simple Android app that lets you “spin” for random numbers with different 
   - **Common** (73.9%): numbers 1, 2, 3  
   - **Uncommon** (20%): numbers 5, 10, 50  
   - **Rare** (5%): numbers 777, 1000, 123  
-  - **Epic** (1%): (planned)  
-  - **Legendary** (0.1%): (planned)  
+  - **Epic** (1%): number 1_000_000
+  - **Legendary** (0.1%): number 0
 - **Animated Spin**: 20-frame cycling animation before revealing final number  
 - **Point System**: Earn points per spin (ranging from 1 to 100)  
 - **Scene Transitions**: Smooth UI changes using AndroidX `TransitionManager`  
