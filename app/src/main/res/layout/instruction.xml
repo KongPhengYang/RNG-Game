@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/instructionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/instructionTitle"
+        android:layout_width="218dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="65dp"
+        android:text="Instructions"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/instructionDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/instructionDesc"
+        android:layout_width="299dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="14dp"
+        android:text="Spin to unlock various numbers, with every new number unlocked, you earn points. Depending on the rarity of a certain number, the amount of points gained will be determined."
+        app:layout_constraintBottom_toTopOf="@+id/instructionDesc2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructionTitle" />
+
+    <TextView
+        android:id="@+id/instructionDesc2"
+        android:layout_width="297dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="12dp"
+        android:text="Reach 100 Points to win!"
+        app:layout_constraintBottom_toTopOf="@+id/instructionDesc3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructionDesc" />
+
+    <TextView
+        android:id="@+id/instructionDesc3"
+        android:layout_width="299dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="47dp"
+        android:text="There is also a list page, that will show you all of the numbers and their worth."
+        app:layout_constraintBottom_toTopOf="@+id/playButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructionDesc2" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="229dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="159dp"
+        android:backgroundTint="#FF0000"
+        android:onClick="onPlayClick"
+        android:text="PLAY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructionDesc3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
